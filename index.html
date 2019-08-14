@@ -6,30 +6,49 @@
     <title>Fashion</title>
     <link rel="stylesheet" href="style/style.css">
     <script src="script/script.js"></script>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    
 </head>
 <body>
    
    <div class="container">
        <div class="top_line">
           <div class="logo">
-              <a href="#"><span class="logo_bt">fashion</span><span class="logo-Lt">tagline here</span></a>
+              <a href="#" class="logo_link"><p class="logo_bt">fashion</p>
+              <p class="logo-lt">tagline here</p></a>
           </div>
-          <div class="top_menu">
-              <ul>
-                  <li><a href="home">home</a></li>
-                  <li><a href="shop">shop</a></li>
-                  <li><a href="women">women</a></li>
-                  <li><a href="men">men</a></li>
-                  <li><a href="find_stores">findstores</a></li>
+          <nav class="top_menu">
+              <ul class="menu_list">
+                  <li class="menu_item">
+                      <a href="#" class="menu_link">home</a>
+                  </li>
+                  <li class="menu_item">
+                      <a href="#" class="menu_link">shop</a>
+                  </li>
+                  <li class="menu_item">
+                      <a href="#" class="menu_link">women</a>
+                  </li>
+                  <li class="menu_item">
+                      <a href="#" class="menu_link">men</a>
+                  </li>
+                  <li class="menu_item">
+                      <a href="#" class="menu_link">findstores</a>
+                  </li>
               </ul>
-          </div>
+          </nav>
           <div class="top_item">
-              <img src="img/cart.png" alt="cart">
-              <img src="img/search.png" alt="">
-              <img src="img/icon.png" alt="icon">
+             <a href="#" class="top_item_cart top_item_link">
+                <img src="img/cart.png" alt="cart" class="top_item_img"> 
+             </a>
+             <a href="#" class="top_item_search top_item_link">
+                 <img src="img/search.png" alt="" class="top_item_img">
+             </a>
+             <a href="#" class="top_item_icon top_item_link">
+                 <img src="img/icon.png" alt="icon" class="top_item_img">
+             </a>
           </div>
           <div class="top_slide-social"></div>
-           
        </div>
    </div>    
 </body>

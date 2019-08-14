@@ -1,3 +1,31 @@
+@font-face{
+
+font-family: 'Myriad_Pro';
+
+src: url(../fonts/MyriadPro-Regular.woff) format('woff'),
+
+url('../fonts/MyriadPro-Regular.woff') format('truetype');
+
+font-weight: normal;
+
+font-style: normal;
+
+}
+
+@font-face{
+
+font-family: 'montserrat-regular';
+
+src: url('../fonts/montserrat-regular.woff') format('woff'),
+
+url('../fonts/montserrat-regular.ttf') format('truetype');
+
+font-weight: normal;
+
+font-style: normal;
+
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -13,4 +41,74 @@ body{
 .container{
     max-width: 100%;
     min-width: 320px;
+}
+
+.top_line{
+    display: grid;
+    grid-template-columns: 140px 1fr auto;
+    padding-top: 40px;
+    border-bottom: 4px solid #f3ebdc;
+}
+
+.logo{
+   
+}
+
+.logo_link{
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.logo_bt{
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 47px;
+    letter-spacing: 1.4px;
+    color:#000;
+    font-family: "Myriad_Pro";
+}
+
+.logo-lt{
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 15px;
+    letter-spacing: 0.6px;
+    color: #000;
+    font-family: montserrat-regular;
+}
+
+
+.menu_list{
+    display: flex;
+    list-style: none;
+}
+
+.menu_item{
+    font-size: 12px;
+    line-height: 23px;
+    letter-spacing: 0.96px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color:#000;
+    margin-left: 85px;
+}
+
+.menu_link{
+    text-decoration: none;
+    color: #000;
+    
+}
+
+.top_item{
+    padding-right: 54px
+}
+
+.top_item_link{
+    text-decoration: none;
+    padding-left: 25px;
+    
+}
+
+.top_item_link:first-child{
+    padding-left: 0;
 }
