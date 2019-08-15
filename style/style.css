@@ -29,6 +29,7 @@ font-style: normal;
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body{
@@ -45,38 +46,45 @@ body{
 
 .top_line{
     display: grid;
-    grid-template-columns: 140px 1fr auto;
+    grid-template-columns: 232px 1fr auto;
     padding-top: 40px;
+    padding-bottom: 26px;
     border-bottom: 4px solid #f3ebdc;
 }
 
 .logo{
-   
+   margin-left: 122px;
 }
 
 .logo_link{
     text-decoration: none;
     text-transform: uppercase;
+    text-align: center;
 }
 
 .logo_bt{
     font-size: 28px;
     font-weight: 600;
-    line-height: 47px;
     letter-spacing: 1.4px;
     color:#000;
     font-family: "Myriad_Pro";
+    padding-bottom: 0;
 }
 
 .logo-lt{
     font-size: 12px;
     font-weight: 600;
-    line-height: 15px;
     letter-spacing: 0.6px;
     color: #000;
-    font-family: montserrat-regular;
+    font-family: "montserrat-regular";
+    margin-top: -8px
+   
 }
 
+.top_menu{
+    padding-left: 235px;
+    padding-top: 6px;
+}
 
 .menu_list{
     display: flex;
@@ -93,6 +101,10 @@ body{
     margin-left: 85px;
 }
 
+.menu_item:nth-child(1){
+    margin-left: 0;
+}
+
 .menu_link{
     text-decoration: none;
     color: #000;
@@ -100,7 +112,8 @@ body{
 }
 
 .top_item{
-    padding-right: 54px
+    padding-right: 54px;
+    padding-top: 4px;
 }
 
 .top_item_link{
@@ -111,4 +124,63 @@ body{
 
 .top_item_link:first-child{
     padding-left: 0;
+}
+
+/* social and slider*/
+
+.social_and_slider{
+    display: grid;
+    grid-template-columns: 64px 1fr;
+}
+
+.top_social{
+    background: #ededed;
+    padding-top: 120px;
+    position: relative;
+}
+
+.top_social_item_link{
+    text-decoration: none;
+    color: #000;
+    display: block;
+    font-size: 20px;
+    padding-left: 20px;
+    padding-top: 44px;
+}
+
+.top_social_item_text{
+    text-transform: uppercase;
+    font-size: 10px;
+    font-family: "montserrat-regular";
+    font-weight: 900;
+    transform: rotate(-90deg);
+    margin-top: 54px;
+}
+
+.top_slider{
+    background: url("../img/slide_1.jpg") center top no-repeat;
+    background-size: cover;
+}
+
+.wrap_slider{
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 220px;
+}
+
+.wrap_slider_content{
+    width: 48%;
+    position: relative;
+}
+
+.slider_heading{
+    font-size: 95px;
+    font-family: "montserrat-regular";
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.arrow{
+    position: absolute;
+    left: 40%;
 }
